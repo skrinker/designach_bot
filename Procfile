@@ -1,1 +1,1 @@
-web: sudo node index
+web: node index
