@@ -12,6 +12,6 @@ bot.setWebHook(`${url}/bot`);
 //   ctx.reply("Привет! Показывай портфолио (если есть)");
 // });
 
-bot.on('new_chat_members', (msg) => {
+bot.on('sticker', (msg) => {
   bot.sendMessage(msg.chat.id, 'Welcome');
 });
