@@ -9,7 +9,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "telegraf": "^3.38.0"
-  }
+  "dependencies": {}
 }
