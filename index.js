@@ -20,5 +20,3 @@ app.listen(3000, () => {
 // });
 
 bot.on('sticker', (ctx) => ctx.reply('👍'));
-
-bot.startWebhook('bot', null, port);
