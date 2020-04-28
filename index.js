@@ -1,13 +1,11 @@
 const { Telegraf } = require('telegraf');
 
-
-const URL = 'https://designach.herokuapp.com';
-
 const bot = new Telegraf("1187109592:AAFwLsqet3zl3DD7kHgGnOSJxtC9AbLwyM0");
+
+bot.telegram.setWebhook('https://designach.herokuapp.com:8443/');
 
 bot.on('new_chat_members', ctx => {
   ctx.reply("Привет! Показывай портфолио (если есть)");
 });
 
-bot.telegram.setWebhook(`${URL}:443`);
-bot.startWebhook(`${URL}/`, null, 443);
+bot.startWebhook('/', null, 443);
