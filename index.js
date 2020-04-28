@@ -8,6 +8,6 @@ bot.telegram.setWebhook(`https://designach.herokuapp.com:${port}/bot`);
 //   ctx.reply("Привет! Показывай портфолио (если есть)");
 // });
 
-bot.on('message', ctx => ctx.reply("Fuk u"));
+bot.on('sticker', (ctx) => ctx.reply('👍'));
 
 bot.startWebhook('/bot', null, port);
