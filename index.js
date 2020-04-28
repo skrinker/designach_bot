@@ -2,7 +2,7 @@ const { Telegraf } = require('telegraf');
 
 
 const PORT = process.env.PORT || 3000;
-const URL = 'https://designach.herokuapp.com/';
+const URL = 'https://designach.herokuapp.com:443';
 
 const bot = new Telegraf("1187109592:AAFwLsqet3zl3DD7kHgGnOSJxtC9AbLwyM0");
 
