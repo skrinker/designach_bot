@@ -7,7 +7,7 @@ const bot = new TelegramBot("1187109592:AAFwLsqet3zl3DD7kHgGnOSJxtC9AbLwyM0", {
   });
 const url = process.env.APP_URL || 'https://designach.herokuapp.com:443';
 
-bot.startWebhook(`${url}/bot`);
+bot.setWebHook(`${url}/bot`);
 // bot.on('new_chat_members', ctx => {
 //   ctx.reply("Привет! Показывай портфолио (если есть)");
 // });
