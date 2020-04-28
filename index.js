@@ -10,5 +10,5 @@ bot.on('new_chat_members', ctx => {
   ctx.reply("Привет! Показывай портфолио (если есть)");
 });
 
-bot.telegram.setWebhook(`${URL}/`);
+bot.telegram.setWebhook(`${URL}:${PORT}`);
 bot.startWebhook(`${URL}/`, null, PORT);
