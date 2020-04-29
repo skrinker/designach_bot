@@ -14,6 +14,6 @@ bot.telegram.setWebhook(`${url}/bot${token}`);
 bot.startWebhook(`/bot${token}`, null, process.env.PORT);
 
 bot.on('new_chat_members', (ctx) => {
-  var name = '@' + ctx.update.message.new_chat_member.first_name;
+  var name = ctx.update.message.new_chat_member.first_name;
   ctx.reply(`Привет, ${name}! Показывай портфолио (если есть)`);
 });
