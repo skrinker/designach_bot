@@ -18,5 +18,5 @@ bot.startWebhook(`/bot${token}`, null, process.env.PORT);
 // });
 
 bot.on('new_chat_members', (ctx) => {
-  ctx.reply('Hello');
+  ctx.reply('Привет! Показывай портфолио (если есть)');
 });
