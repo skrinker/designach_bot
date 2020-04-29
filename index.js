@@ -11,7 +11,7 @@ const url = process.env.APP_URL || 'https://designach.herokuapp.com:443';
 
 bot.telegram.setWebhook(`${url}/bot${token}`);
 
-bot.startWebhook(`/bot${token}`);
+bot.startWebhook(`/bot${token}`, null, process.env.PORT);
 // bot.setWebHook(`${url}/bot`);
 // bot.on('new_chat_members', ctx => {
 //   ctx.reply("Привет! Показывай портфолио (если есть)");
