@@ -9,7 +9,7 @@ const options = {
 const bot = new Telegraf(token, options);
 const url = process.env.APP_URL || 'https://designach.herokuapp.com:443';
 
-bot.telegram.setWebHook(`${url}/bot${token}`);
+bot.telegram.setWebhook(`${url}/bot${token}`);
 
 bot.startWebhook(`/bot${token}`);
 // bot.setWebHook(`${url}/bot`);
