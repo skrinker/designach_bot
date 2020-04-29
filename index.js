@@ -1,6 +1,6 @@
 const { Telegraf } = require('telegraf');
 
-const token = "AAFwLsqet3zl3DD7kHgGnOSJxtC9AbLwyM0";
+const token = "1187109592:AAFwLsqet3zl3DD7kHgGnOSJxtC9AbLwyM0";
 const options = {
   webHook: {
     port: process.env.PORT,
