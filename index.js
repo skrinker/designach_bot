@@ -18,6 +18,6 @@ bot.startWebhook(`/bot${token}`, null, process.env.PORT);
 // });
 
 bot.on('new_chat_members', (ctx) => {
-  console.log(ctx.tg.update.message.new_chat_member);
+  console.log(ctx.updateType);
   ctx.reply('Привет! Показывай портфолио (если есть)');
 });
